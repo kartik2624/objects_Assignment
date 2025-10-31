@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var today = new Date();
+
+
+        var year = today.getFullYear();
+        var month = today.getMonth();
+
+
+        var firstDay = new Date(year, month, 1);
+
+
+        var lastDay = new Date(year, month + 1, 0);
+
+        console.log("First Day of Current Month:", firstDay.toDateString());
+        console.log("Last Day of Current Month:", lastDay.toDateString());
+
+
+    </script>
+</body>
+
+</html>
